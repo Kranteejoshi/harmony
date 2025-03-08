@@ -1,4 +1,5 @@
 # social-media# Harmony MERN App - README
+-> Social-media platform for artistic expression and interaction.
 
 ## Introduction
 
