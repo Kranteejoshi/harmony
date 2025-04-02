@@ -3,6 +3,9 @@ const app = express()
 const port = 3000
 const UserRoute = require('./routes/user')
 const dbConnect = require('./db/connection')
+const cors = require('cors')
+
+app.use(cors())
 app.use(express.json())
 
 dbConnect()
