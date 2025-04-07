@@ -52,6 +52,11 @@ export const Register = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
+        <img
+          className="mx-auto h-12 w-auto"
+          src="/logo.svg"
+          alt="Harmony Logo"
+        />
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Create your account
         </h2>
@@ -99,11 +104,10 @@ export const Register = () => {
                       <Field
                         name="fullName"
                         id="fullName"
-                        className={`appearance-none block w-full px-3 py-2 border ${
-                          errors.fullName && touched.fullName
+                        className={`appearance-none block w-full px-3 py-2 border ${errors.fullName && touched.fullName
                             ? "border-red-300"
                             : "border-gray-300"
-                        } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+                          } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                       />
                       {errors.fullName && touched.fullName ? (
                         <p className="mt-2 text-sm text-red-600">
@@ -125,11 +129,10 @@ export const Register = () => {
                       <Field
                         name="userName"
                         id="userName"
-                        className={`appearance-none block w-full px-3 py-2 border ${
-                          errors.userName && touched.userName
+                        className={`appearance-none block w-full px-3 py-2 border ${errors.userName && touched.userName
                             ? "border-red-300"
                             : "border-gray-300"
-                        } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+                          } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                       />
                       {errors.userName && touched.userName ? (
                         <p className="mt-2 text-sm text-red-600">
@@ -152,11 +155,10 @@ export const Register = () => {
                         as="select"
                         name="gender"
                         id="gender"
-                        className={`appearance-none block w-full px-3 py-2 border ${
-                          errors.gender && touched.gender
+                        className={`appearance-none block w-full px-3 py-2 border ${errors.gender && touched.gender
                             ? "border-red-300"
                             : "border-gray-300"
-                        } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+                          } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                       >
                         <option value="">Select Gender</option>
                         <option value="Male">Male</option>
@@ -187,11 +189,10 @@ export const Register = () => {
                         type="date"
                         name="dateOfBirth"
                         id="dateOfBirth"
-                        className={`appearance-none block w-full px-3 py-2 border ${
-                          errors.dateOfBirth && touched.dateOfBirth
+                        className={`appearance-none block w-full px-3 py-2 border ${errors.dateOfBirth && touched.dateOfBirth
                             ? "border-red-300"
                             : "border-gray-300"
-                        } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+                          } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                       />
                       {errors.dateOfBirth && touched.dateOfBirth ? (
                         <p className="mt-2 text-sm text-red-600">
@@ -214,11 +215,10 @@ export const Register = () => {
                         type="email"
                         name="email"
                         id="email"
-                        className={`appearance-none block w-full px-3 py-2 border ${
-                          errors.email && touched.email
+                        className={`appearance-none block w-full px-3 py-2 border ${errors.email && touched.email
                             ? "border-red-300"
                             : "border-gray-300"
-                        } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+                          } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                       />
                       {errors.email && touched.email ? (
                         <p className="mt-2 text-sm text-red-600">
@@ -240,11 +240,10 @@ export const Register = () => {
                       <Field
                         name="phoneNumber"
                         id="phoneNumber"
-                        className={`appearance-none block w-full px-3 py-2 border ${
-                          errors.phoneNumber && touched.phoneNumber
+                        className={`appearance-none block w-full px-3 py-2 border ${errors.phoneNumber && touched.phoneNumber
                             ? "border-red-300"
                             : "border-gray-300"
-                        } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+                          } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                       />
                       {errors.phoneNumber && touched.phoneNumber ? (
                         <p className="mt-2 text-sm text-red-600">
@@ -266,11 +265,10 @@ export const Register = () => {
                       <Field
                         name="address"
                         id="address"
-                        className={`appearance-none block w-full px-3 py-2 border ${
-                          errors.address && touched.address
+                        className={`appearance-none block w-full px-3 py-2 border ${errors.address && touched.address
                             ? "border-red-300"
                             : "border-gray-300"
-                        } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+                          } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                       />
                       {errors.address && touched.address ? (
                         <p className="mt-2 text-sm text-red-600">
@@ -293,11 +291,10 @@ export const Register = () => {
                         type="password"
                         name="password"
                         id="password"
-                        className={`appearance-none block w-full px-3 py-2 border ${
-                          errors.password && touched.password
+                        className={`appearance-none block w-full px-3 py-2 border ${errors.password && touched.password
                             ? "border-red-300"
                             : "border-gray-300"
-                        } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
+                          } rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm`}
                       />
                       {errors.password && touched.password ? (
                         <p className="mt-2 text-sm text-red-600">
